@@ -50,30 +50,26 @@ test.skip("dismisses/Accept of peompt a confirmation dialog with page.on()", asy
 
 })
 
-test("Prompt dialog :", async ({ page }) => {
+test.only("Prompt dialog :", async ({ page }) => {
     await page.goto("https://the-internet.herokuapp.com/javascript_alerts", { waitUntil: 'domcontentloaded' });
     const promptButton: Locator = page.getByRole('button', { name: 'Click for JS Prompt' });
     await expect(promptButton).toBeVisible();
     await expect(promptButton).toBeEnabled();
-    const promptValue = 'Playwright prompt value';
-
-    // Handle the prompt immediately because it blocks the click until closed.
+    const promtTxt = 'playwright prompt'
     const promptHandled = new Promise<string>((resolve, reject) => {
-        page.once('dialog', async (dialog) => {
+        page.once('dialog', (dialog) => {
             try {
                 expect(dialog.type()).toBe('prompt');
                 expect(dialog.message()).toBe('I am a JS prompt');
-                await dialog.accept(promptValue);
-                resolve(promptValue);
+                dialog.accept(promtTxt);
+                resolve(promtTxt);
             } catch (error) {
-                reject(error);
+                reject(error)
             }
         });
-    });
-
+    });//promise ended!
     await promptButton.click();
-    await expect(promptHandled).resolves.toBe(promptValue);
-
-    // Verify that the page received the text entered into the prompt.
-    await expect(page.locator('#result')).toHaveText(`You entered: ${promptValue}`);
-});
+    //await promptHandled;
+    await expect(promptHandled).resolves.toBe(promtTxt);
+    await expect(page.locator('#result')).toHaveText(`You entered: ${promtTxt}`);
+})//test
