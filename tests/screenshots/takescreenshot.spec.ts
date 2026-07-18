@@ -17,14 +17,13 @@ test.skip("verify that capturing screenshot: ", async ({ page }) => {
 test("verify that a test is passed:", async ({ page }) => {
     await page.goto('https://www.demoblaze.com/', { waitUntil: 'domcontentloaded' });
     console.log("test passsed");
-
 })
 
 test("verify the screenshot automaticalyy taken and stored:", async ({ page }) => {
     await page.goto('https://www.demoblaze.com/', { waitUntil: 'domcontentloaded' });
     await page.locator('#login2').click();
     await page.locator('#loginusername').fill('pavanol');
-    await page.locator('#loginpassword').fill('test@123x');
+    await page.locator('#loginpassword').fill('test@123');
     await page.getByRole('button', { name: 'Log in' }).click();
     await expect(page.getByRole('link', { name: 'Log out' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Welcome pavanol' })).toBeVisible();
