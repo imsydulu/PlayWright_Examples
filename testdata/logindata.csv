@@ -1,0 +1,5 @@
+email,password,expectedResult
+laura.taylor1234@example.com,test123,valid
+invaliduser@gmail.com,test123,invalid
+validnotuser@gmail.com,testxyz,invalid
+,,invalid
