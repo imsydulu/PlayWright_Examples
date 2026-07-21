@@ -1,0 +1,113 @@
+<testsuites id="" name="" tests="9" failures="3" skipped="3" errors="0" time="25.825016">
+<testsuite name="Reporters\reporter.spec.ts" timestamp="2026-07-21T07:43:48.383Z" hostname="chromium" tests="3" failures="1" skipped="1" time="11.67" errors="0">
+<testcase name="reporter test: " classname="Reporters\reporter.spec.ts" time="0.005">
+<system-out>
+<![CDATA[test is executed: 
+]]>
+</system-out>
+</testcase>
+<testcase name="google test reporter:" classname="Reporters\reporter.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="reporter test " classname="Reporters\reporter.spec.ts" time="11.665">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Reporters-reporter-reporter-test--chromium\test-failed-1.png]]
+]]>
+</system-out>
+<failure message="reporter.spec.ts:12:6 reporter test " type="FAILURE">
+<![CDATA[  [chromium] › Reporters\reporter.spec.ts:12:6 › reporter test  ────────────────────────────────────
+
+    Expected to fail, but passed.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Reporters-reporter-reporter-test--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="Reporters\reporter.spec.ts" timestamp="2026-07-21T07:43:48.383Z" hostname="firefox" tests="3" failures="1" skipped="1" time="4.513" errors="0">
+<testcase name="reporter test: " classname="Reporters\reporter.spec.ts" time="0.008">
+<system-out>
+<![CDATA[test is executed: 
+]]>
+</system-out>
+</testcase>
+<testcase name="google test reporter:" classname="Reporters\reporter.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="reporter test " classname="Reporters\reporter.spec.ts" time="4.505">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Reporters-reporter-reporter-test--firefox\test-failed-1.png]]
+]]>
+</system-out>
+<failure message="reporter.spec.ts:12:6 reporter test " type="FAILURE">
+<![CDATA[  [firefox] › Reporters\reporter.spec.ts:12:6 › reporter test  ─────────────────────────────────────
+
+    Expected to fail, but passed.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Reporters-reporter-reporter-test--firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="Reporters\reporter.spec.ts" timestamp="2026-07-21T07:43:48.383Z" hostname="webkit" tests="3" failures="1" skipped="1" time="4.069" errors="0">
+<testcase name="reporter test: " classname="Reporters\reporter.spec.ts" time="0.004">
+<system-out>
+<![CDATA[test is executed: 
+]]>
+</system-out>
+</testcase>
+<testcase name="google test reporter:" classname="Reporters\reporter.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="reporter test " classname="Reporters\reporter.spec.ts" time="4.065">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Reporters-reporter-reporter-test--webkit\test-failed-1.png]]
+]]>
+</system-out>
+<failure message="reporter.spec.ts:12:6 reporter test " type="FAILURE">
+<![CDATA[  [webkit] › Reporters\reporter.spec.ts:12:6 › reporter test  ──────────────────────────────────────
+
+    Expected to fail, but passed.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Reporters-reporter-reporter-test--webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

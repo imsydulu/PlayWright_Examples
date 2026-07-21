@@ -32,7 +32,15 @@ export default defineConfig({
   //workers: process.env.CI ? 1 : undefined,
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  //reporter: 'html',
+  //reporter: [['html', { open: 'always', outputFolder: 'html_report' }],
+  //reporter: 'list',
+  //reporter:'dot',
+  //reporter:'line',
+  reporter: 'allure-playwright',
+  //reporter: [['allure-playwright'],['json', { outputFile: 'results.json' }],['junit', { outputFile: 'results.xml' }]],
+
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     screenshot: 'only-on-failure', //done by sydulu
